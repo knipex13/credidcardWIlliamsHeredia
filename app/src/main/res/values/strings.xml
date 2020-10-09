@@ -17,11 +17,4 @@
     <string name="_1234_5678_9012_3456">1234 5678 9012 3456</string>
     <string name="_12_19">12/19</string>
     <string name="todo">TODO</string>
-    <string-array name="Ciudades">
-        <item>Arica</item>
-        <item>Iquique</item>
-        <item>Santiago</item>
-
-    </string-array>
-
-</resources>
+ </resources>
