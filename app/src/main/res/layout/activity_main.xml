@@ -4,76 +4,132 @@
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    tools:context="MainActivity">
+    tools:context="MainActivity"
+    tools:ignore="ExtraText">
 
 
 
-    <LinearLayout
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/label_titulo" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/save_guardar" />
+
+        </LinearLayout>
+
+        <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:orientation="horizontal">
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:nestedScrollingEnabled="true">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:autofillHints=""
+            android:hint="@string/label_nombre"
+            android:inputType="text" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:autofillHints=""
+            android:hint="@string/label_apellido"
+            android:inputType="text" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:autofillHints=""
+            android:hint="@string/label_num_tarjeta"
+            android:inputType="number"
+            android:maxLength="16" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:autofillHints=""
+                android:hint="@string/label_mes"
+                android:inputType="number"
+                android:maxLength="2" />
+
+            <EditText
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:autofillHints=""
+                android:hint="@string/label_año"
+                android:inputType="number"
+                android:maxLength="4" />
+
+            <EditText
+                android:layout_width="140dp"
+                android:layout_height="60dp"
+                android:autofillHints=""
+                android:hint="@string/label_codigo"
+                android:inputType="number"
+                android:maxLength="3" />
+
+        </LinearLayout>
 
         <TextView
-            android:layout_width="300dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity=""
+            android:text="@string/labe_direccion" />
+
+
+        <EditText
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:text="@string/label_titulo" />
+            android:autofillHints=""
+            android:hint="@string/label_ciudad"
+            android:inputType="number"
+            android:maxLength="80" />
 
-        <Button
-            android:layout_width="100dp"
+        <EditText
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/save_guardar"/>
-
-    </LinearLayout>
-
-
-    <EditText
-        android:layout_width="match_parent"
-        android:hint="@string/label_nombre"
-        android:layout_height="60dp"/>
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:hint="@string/label_apellido"/>
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:inputType="number"
-        android:maxLength="16"
-        android:hint="@string/label_num_tarjeta"/>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:orientation="horizontal">
-
-        <EditText
-            android:layout_width="100dp"
-            android:layout_height="60dp"
+            android:autofillHints=""
+            android:hint="@string/label_calle_num"
             android:inputType="number"
-            android:maxLength="2"
-            android:hint="@string/label_mes"/>
-
-        <EditText
-            android:layout_width="120dp"
-            android:layout_height="60dp"
-            android:inputType="number"
-            android:maxLength="4"
-            android:hint="@string/label_año"/>
-
-        <EditText
-            android:layout_width="140dp"
-            android:layout_height="60dp"
-            android:inputType="number"
-            android:maxLength="3"
-            android:hint="@string/label_codigo"/>
-
-    </LinearLayout>
+            android:maxLength="2" />
 
 
-    <include layout="@layout/detail_activity"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal">
 
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:autofillHints=""
+                android:hint="@string/label_estado"
+                android:inputType="number"
+                android:maxLength="10" />
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:autofillHints=""
+                android:hint="@string/label_codigo_postal"
+                android:inputType="number"
+                android:maxLength="8" />
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

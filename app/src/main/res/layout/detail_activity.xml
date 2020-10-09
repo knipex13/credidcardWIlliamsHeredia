@@ -20,38 +20,10 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/labe_direccion"/>
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:hint="@string/label_calle_num"/>
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:hint="@string/label_ciudad"/>
-
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <EditText
-                    android:layout_width="200dp"
-                    android:layout_height="60dp"
-                    android:hint="@string/label_estado" />
-
-                <EditText
-                    android:layout_width="200dp"
-                    android:layout_height="60dp"
-                    android:inputType="number"
-                    android:hint="@string/label_codigo_postal" />
-
-            </LinearLayout>
+                android:orientation="horizontal"/>
 
             <TextView
                 android:layout_width="match_parent"
